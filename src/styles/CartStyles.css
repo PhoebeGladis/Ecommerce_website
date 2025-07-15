@@ -1,0 +1,106 @@
+.cart-page {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.cart-page h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.cart-page p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Product Card */
+.card.flex-row {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  align-items: center;
+  transition: all 0.3s ease;
+  width: 100%;
+  min-height: 180px;
+}
+
+.card.flex-row:hover {
+  transform: scale(1.015);
+}
+
+/* Make image bigger */
+.card-img-top {
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+}
+
+/* Increase space between items */
+.card.flex-row .col-md-4 {
+  padding: 0 1rem;
+}
+
+/* Product Text */
+.col-md-4 p {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Remove Button */
+.cart-remove-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-remove-btn .btn {
+  padding: 10px 16px;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+
+/* Cart Summary */
+.cart-summary {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.cart-summary h4 {
+  font-weight: 600;
+  color: #333;
+}
+
+.cart-summary hr {
+  border-color: #ccc;
+}
+
+.cart-summary button {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+/* Responsive Tweak */
+@media (max-width: 768px) {
+  .cart-remove-btn {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .card.flex-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cart-summary {
+    margin-top: 2rem;
+  }
+}
